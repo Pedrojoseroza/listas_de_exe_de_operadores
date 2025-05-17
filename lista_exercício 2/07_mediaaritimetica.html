@@ -1,0 +1,32 @@
+<meta charset="UTF-8">
+<script>
+    /*
+    Problema: Média das notas do aluno [MÉDIA ARITMÉTICA]
+    Peça para o aluno informar as três notas que obteve em CADAS TRIMESTRE, na disciplina de Programação I. Calcule e apresente a média que o aluno obteve ao final do ano.
+    */
+
+    //ENTRADA
+    const primeiraNotaDoPrimeiroTrimestre = Number(prompt(`Informe a sua primeira nota no primeiro trimestre na matéria de programação.`));
+    const segundaNotaDoPrimeiroTrimestre = Number(prompt(`Informe a sua segunda nota no primeiro trimestre na matéria de programação.`));
+    const terceiraNotaDoPrimeiroTrimestre = Number(prompt(`Informe a sua terceira nota no primeiro trimestre na matéria de programação.`));
+    const primeiraNotaDoSegundoTrimestre = Number(prompt(`Informe a sua primeira nota no segundo trimestre na matéria de programação.`));
+    const segundaNotaDoSegundoTrimestre = Number(prompt(`Informe a sua segunda nota no segundo trimestre na matéria de programação.`));
+    const terceiraNotaDoSegundoTrimestre = Number(prompt(`Informe a sua terceira nota no segundo trimestre na matéria de programação.`));
+    const primeiraNotaDoTerceiroTrimestre = Number(prompt(`Informe a sua primeira nota no terceiro trimestre na matéria de programação.`));
+    const segundaNotaDoTerceiroTrimestre = Number(prompt(`Informe a sua segunda nota no terceiro trimestre na matéria de programação.`));
+    const terceiraNotaDoTerceiroTrimestre = Number(prompt(`Informe a sua terceira nota no terceiro trimestre na matéria de programação.`));
+    //PROCESSAMENTO
+    let mediaGlobal = (primeiraNotaDoPrimeiroTrimestre +
+        segundaNotaDoPrimeiroTrimestre +
+        terceiraNotaDoPrimeiroTrimestre +
+        primeiraNotaDoSegundoTrimestre +
+        segundaNotaDoSegundoTrimestre +
+        terceiraNotaDoSegundoTrimestre +
+        primeiraNotaDoTerceiroTrimestre +
+        segundaNotaDoTerceiroTrimestre +
+        terceiraNotaDoTerceiroTrimestre ) / 9;
+        mediaGlobal.toFixed(2);
+    // Divide por 9, pois são 9 notas 
+    //SAÍDA
+    document.write(`A sua média global é ${mediaGlobal}`);
+</script>

@@ -1,0 +1,21 @@
+<meta charset="UTF-8">
+<script>
+    /*
+    Problema: Custo da reforma
+    Considere que uma pessoa está realizando uma reforma na sua casa. O pedreiro cobra R$ 30,00 a hora de trabalho e o pintor cobra R$ 25,00. Peça para o usuário informar quantas horas foram trabalhadas pelo pedreiro e quantas horas foram trabalhadas pelo pintor. Apresente, ao final do programa, as seguintes informações:
+
+    Quanto deverá ser pago para o pedreiro
+    Quanto deverá ser pago para o pintor
+    Quanto foi o custo total da obra, considerando os dois profissionais envolvidos
+    */
+    //ENTRADA
+const pedreiro = Number(prompt(`Informe quantas horas  o predeiro trabalhou na reforma.`));
+    const pintor = Number(prompt(`Informe quantas horas o pintor trabalhou na reforma. `));
+    //PROCESSAMENTO
+     const precoPedreiro = pedreiro * 30.00;
+    const precoPintor = pintor * 25.00;
+    //SAÍDA
+    document.write(`Para o pedreiro você deve pagar R$ ${precoPedreiro}. `);
+    document.write(`Para o pintor você deve pagar R$ ${precoPintor}. `);
+    document.write(`Ao todo a reforma custou R$ ${precoPedreiro + precoPintor}. `);
+</script>

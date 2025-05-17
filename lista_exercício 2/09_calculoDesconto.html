@@ -1,0 +1,17 @@
+<meta charset="UTF-8">
+<script>
+    /*
+    PROBLEMA: Calcular porcentagem de desconto
+    Peça para o usuário informar o preço original do produto e o preço do produto durante a campanha promocional. Calcule qual foi a porcentagem de desconto dada para o produto na promoção.
+    */
+
+    //ENTRADA
+const precoOriginal = Number(prompt(`Informe o valor do produto sem nenhum desconto.`));
+const precoDesconto = Number(prompt(`Informe o valor do produto com o desconto aplicado`));
+    //PROCESSAMENTO
+    // Fórmula: Desconto Percentual = 100(100 porque é em Porcentagem) - (100 * preço Descontado / preço Original)
+    let desconto = (100 * precoDesconto) / precoOriginal; 
+    desconto = 100 - desconto;
+    //SAÍDA
+    document.write(`O desconto foi de ${desconto}%`);
+</script>
