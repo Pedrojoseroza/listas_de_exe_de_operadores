@@ -1,0 +1,16 @@
+<meta charset="UTF-8">
+<script>
+    /*
+    Problema: Celsius para Fahrenheit
+    Peça para o usuário informar uma temperatura em graus Celsius. Converta e apresente a temperatura em graus Fahrenheit.
+    */
+
+    //ENTRADA
+temperaturaAmbiente = Number(prompt(`Informe a temperatura do seu local, em  graus celsius.`))
+    
+    //PROCESSAMENTO
+    // (0 °C × 9/5) + 32 = 32 °F
+temperaturaAmbiente = (temperaturaAmbiente * 1.8 ) + 32;
+    //SAÍDA
+document.write  (`A temperatura do ambiente que você está é ${temperaturaAmbiente} graus Fareinheit.`);
+</script>

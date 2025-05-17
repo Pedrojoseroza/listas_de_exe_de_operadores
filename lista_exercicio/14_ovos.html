@@ -1,0 +1,18 @@
+<meta charset="UTF-8">
+<script>
+    /*
+    Problema: Dúzia de ovos
+    Peça para o usuário informar a quantidade de ovos que foram comprados e apresente a quantidade de dúzias correspondente. Considere sempre dúzias cheias. Caso precise, arredonde para cima.
+    */
+
+    //ENTRADA
+const quantidadeOvos = Number(prompt(`Informe a quantidade de ovos que foram comprados.`))
+    
+    //PROCESSAMENTO
+//Math.ceil() que retorna o maior número inteiro que é maior que o número passado, por exemplo Math.ceil(11.123), o valor fica 12
+    let duzia = quantidadeOvos / 12;
+    duzia = Math.ceil(duzia);
+    //SAÍDA
+console.log(duzia);
+document.write(`A quantidade de duzias que você comprou é de ${duzia} duzias.`);
+</script>
